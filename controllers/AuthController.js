@@ -1,7 +1,7 @@
 // const User = require("../models/User"); // Use require for imports
 // const jwt = require("jsonwebtoken"); // Example of another require
 const User = require("../models/User");
-export const signup = async (req, res) => {
+const signup = async (req, res) => {
   try {
     console.log(req.body);
     const { username, password, confirmPassword } = req.body;
@@ -38,7 +38,7 @@ export const signup = async (req, res) => {
   }
 };
 
-export const login = async (req, res) => {
+const login = async (req, res) => {
   try {
     const { username, password } = req.body;
     const user = await User.findOne({ username });
@@ -70,4 +70,4 @@ export const login = async (req, res) => {
     });
   }
 };
-export default { signup, login };
+module.exports = { signup, login };
