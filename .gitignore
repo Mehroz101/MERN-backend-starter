@@ -1,0 +1,35 @@
+# Node.js / Backend
+node_modules/
+npm-debug.log
+yarn-error.log
+*.env
+*.log
+/dist
+/build
+.DS_Store
+
+# MongoDB Data (If using local MongoDB)
+data/
+
+# Frontend (React or other frontend frameworks)
+build/
+node_modules/
+*.env
+*.log
+.DS_Store
+/.cache
+/public/
+
+# IDEs/Editors
+.vscode/
+.idea/
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
