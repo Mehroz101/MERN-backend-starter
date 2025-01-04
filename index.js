@@ -4,7 +4,6 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("swagger-jsdoc");
 const { connectDB } = require("./config/db.js");
 require("dotenv").config();
-
 const path = require("path");
 const AuthRouter = require("./routes/AuthRouter.js");
 
