@@ -13,7 +13,19 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    gender: {
+      type: String,
+    },
     rollno: {
+      type: String,
+    },
+    classID: {
+      type: Number,
+    },
+    className: {
+      type: String,
+    },
+    university: {
       type: String,
     },
     isAdmin: {

@@ -19,6 +19,8 @@ const { login, signup } = require("../controllers/AuthController");
  *                 type: string
  *               password:
  *                 type: string
+ *
+ *
  *     responses:
  *       200:
  *         description: User successfully logged in
@@ -55,6 +57,7 @@ router.post("/signin", login);
  *                 type: string
  *               confirmPassword:
  *                 type: string
+ *
  *     responses:
  *       201:
  *         description: User successfully signed up
